@@ -18,7 +18,6 @@ def find_min(inputlist):
             minValue = n
     return minValue 
 
-
 img = cv2.imread("Lenna.jpg")
 newimg = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 FaceDetection = face_det.FaceDetection(model_selection=1)
@@ -48,7 +47,7 @@ else:
 
     #point1 = (min_x, max_y)
     #point2 = (max_x, min_y)
-    thickness = 1
+    thickness = -1
     color = (0,255,0)
     cv2.rectangle(img,point1,point2,color,thickness) 
 
